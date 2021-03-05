@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    <body style="background-color:paleturquoise"></body>
+</head>
+<body>
+    <a href="./puerto_escondido.html">GO BACK</a>
+    <h3>Quizz</h3>
+    <form id="quizz" method="POST" action="mailto:pulgamecnica11@gmail.com" oninput="outputExt.value=parseInt(extension.value)">
+        <fieldset>
+            <legend>Personal Info:</legend>
+            <div class="tab">
+                <label for="name">Name:</label>
+                <input name="name" type="text" id="name" placeholder="enter name..." autofocus>
+                <label for="last-name">Surname:</label>
+                <input name="last-name" type="text" id="surname" placeholder="enter last name...">
+            </div>
+            <div class="tab">
+                <label for="age">Age:</label>
+                <input name="age" type="number" id="age" placeholder="0">
+                <label for="age">Choose your birthday:</label>
+                <input name="birthday" type="date" id="birthday">
+            </div>
+            <div class="tab">
+                <label for="email">Email:</label>
+                <input name="email" type="email" id="email" placeholder="example@gmail.com " required>
+                <label for="telephone">Telephone:</label>
+                <input name="telephone" type="text" id="telephone" placeholder="000-000-000 ">
+            </div>
+            <div class="tab">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="male">Female</option>
+                    <option value="female">Male</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+            </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Geography:</legend>
+            <label for="extension">How much is aprox. the extension of Puerto Escondido(between 0 and 10000 km).    </label>
+            <input type="range" name="extension" id="extension"" min="0" max="10000">
+            <output form="quizz" id="outputExt" name="outputExt" for="extension"></output> km.<br>
+            In wich Country is Puerto Escondido Located?<br>
+            <input type="radio" id="mexico" name="country" value="mexico">
+            <label for="mexico"><img src="img/mexico200px.jpg" alt="mexico" width="200" height="120"></label><br>
+            <input type="radio" id="mars" name="country" value="mars">
+            <label for="mars"><img src="img/Flag_of_Mars.svg" alt="mars" width="200" height="120"></label><br>
+            <input type="radio" id="china" name="country" value="china">
+            <label for="china"><img src="img/chinaflag.jpg" alt="china" width="200" height="120"></label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Beach/Ocean:</legend>
+            Choose the Hotel you like the most(you can choose multple):<br>
+            <input type="checkbox", name="hotel1" value="posadaReal">
+            <label for="hotel1">Hotel Posada Real</label><br>
+            <input type="checkbox", name="hotel2" value="selina">
+            <label for="hotel2">Selina Puerto Escondido</label><br>
+            <input type="checkbox", name="hotel3" value="santaFe">
+            <label for="hotel3">Santa Fe</label><br>
+            <input type="checkbox", name="hotel4" value="hacienda">
+            <label for="hotel4">La Hacienda</label><br>
+            <label for="points">How would you rate the pollution in Puerto Escondido(betwwen 0-20):</label>
+            <input type="number" id="points" name="points" step="2">
+        </fieldset>
+        <fieldset>
+            <legend>Statistics:</legend>
+            <label for="prefered-area">What area would you like to visit?</label>
+            <select name="prefered-area" id="prefered-area" multiple>
+                <option value="Zicatela">Zicatela</option>
+                <option value="Manzanillo">Manzanillo</option>
+                <option value="Carrizalillo">Carrizalillo</option>
+                <option value="City">The city</option>
+                <option value="City">None of the ones above</option>
+            </select><br>
+            <label for="have-been">Have you been to Puerto Rico?</label>
+            <select name="have-been" id="have-been">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+                <option value="null">I don't want to tell you</option>
+            </select><br>
+            <label for="expend">How much would you expect to expend if you go to Puerto Escondido for one week?</label>
+            <select name="expend" id="expend">
+                <option value="less50">Less than $50</option>
+                <option value="between50-100">$50-100</option>
+                <option value="between100-200">$100-500</option>
+                <option value="plus500">More than $500</option>
+            </select><br>
+            <label for="checkbox">What transport would you use?</label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Boat</label><br>
+        
+        </fieldset>
+        <fieldset>
+            <legend>Images</legend>
+            <label for="image">You can share images of puerto rico with us if you like:</label><br>
+            <input name="image" id="image "type="image" src="img/computacion-en-la-nube.svg" alt="Submit" width="48" height="48" multiple><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
