@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comments</title>
+	 <script src="https://kit.fontawesome.com/72e594ef21.js"></script>
+</head>
+<body style="background-color:paleturquoise">
+	<a href="./puerto_escondido.html">GO BACK</a>
+	<h3>Comments</h3>
+	<form id="feedback" method="POST" oninput="outputExt.value=parseInt(extension.value)">
+		<table>
+			<tr>
+
+				<td>
+					<table>
+						<legend>Your personal info:</legend>
+
+					  <tr>
+				  		<td>
+					  		<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					  	</td>
+
+					  	<td>
+					  		<input  name="name" placeholder="John Doe" class="form-control"  type="text">
+					  	</td>
+						</tr>
+
+						<tr>
+				  		<td>
+				 				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+				 			</td>
+
+				 			<td>
+				    		<input name="email" type="email" class="form-control" placeholder="john.doe@yahoo.com">
+				    	</td>
+						</tr>
+
+						<tr>
+				  		<td>
+				  			<span class="input-group-addon"><i class="fa fa-globe"></i></span>
+				  		</td>
+
+				  		<td>
+				  			<input  name="URL" placeholder="https://google.com" class="form-control"  type="url">
+				  		</td>
+						</tr>
+
+						<tr>
+			        <td colspan = "2">Rate Puerto Escondido Website:</td>
+			      </tr>
+
+						<tr>
+				  		<td>
+			  				<span class="input-group-addon"><i class="fa fa-heart"></i></span>
+			  			</td>
+
+			  			<td>
+					   		<select class="form-control" id="rate">
+					      	<option value="1star">1</option>
+					      	<option value="2stars">2</option>
+					      	<option value="3stars">3</option>
+					      	<option value="4stars">4</option>
+					      	<option value="5stars">5</option>
+					    	</select>
+					    </td>
+						</tr>
+
+						<tr>
+			        <td colspan = "2"><div class="pinfo">Leave a comment: (Make it better)</div></td>
+			      </tr>
+
+						<tr>
+			  			<td>
+				  			<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+				  		</td>
+
+				  		<td>
+				  			<textarea class="form-control" id="review" rows="3"></textarea>
+				  		</td>
+						</tr>
+					</table>
+				</td>
+
+				<td>
+					<table>
+						<tr>
+				      <td colspan = "2"><div class="pinfo">We would love to hear about your experience:</div></td>
+				    </tr>
+						<tr>
+							<td>
+				  			<span class="input-group-addon"><i class="fas fa-smile-beam"></i></span>
+							</td>
+
+							<td>
+								<hr>
+		            <legend>Do you think the website is clear and understandable? </legend>
+		            <input type="radio" id="very-good" name="clarity" value="very-good">
+							  <label for="very-good">Yes</label><br>
+							  <input type="radio" id="good" name="clarity" value="good">
+							  <label for="good">More Less</label><br>
+							  <input type="radio" id="bad" name="clarity" value="bad">
+							  <label for="bad">Can be better</label><br>
+							  <input type="radio" id="very-bad" name="clarity" value="very-bad">
+							  <label for="very-bad">Not at all!!</label><br>
+							</td>
+						</tr>				
+
+						<tr>
+							<td>
+				  			<span><i class="fas fa-bomb"></i></span>
+							</td>
+							<td>
+								<hr>
+		            <label for="errors-list">Did you find any errors on the website? Tell us about it: </label>
+								<br>
+								<input type="text" name="errors-list" id="errors-list">
+							</td>
+						</tr>				
+
+						<tr>
+							<td>
+				  			<span><i class="fas fa-info-circle"></i></span>
+							</td>
+							<td>
+								<hr>
+								<label for="details">Do you feel we should change any details on the website?</label>
+								<br>
+								<label for="details">What do you think we should add to the website?</label>
+								<br>
+				  			<textarea class="form-control" id="details" rows="3"></textarea>
+							</td>
+						</tr>				
+
+						<tr>
+							<td>
+								<span><i class="fas fa-star-half-alt"></i></span>
+							</td>
+							<td>
+								<hr>
+								<legend>Share with us, how much did the website attracted your attention?</legend>
+		            <input type="range" name="attention" id="attention" min="0" max="10">
+								<span><i class="fa fa-heart"></i></span>
+							</td>
+						</tr>				
+
+						<tr>
+							<td>
+								<span><i class="fas fa-question-circle"></i></span>
+							</td>
+							<td>
+								<hr>
+								<legend>Choose if you think we can make any of the options better:</legend>
+								<input type="checkbox" id="check1" name="check1" value="Logic">
+		            <label for="check1"> Information Logic</label><br>
+		            <input type="checkbox" id="check2" name="check2" value="Relevance">
+		            <label for="check2"> Information Relevance</label><br>
+		            <input type="checkbox" id="check3" name="check3" value="Significance">
+		            <label for="check3"> Information Significance</label><br>
+		            <input type="checkbox" id="check4" name="check4" value="Originality">
+		            <label for="check4	"> Originality</label><br>
+							</td>
+						</tr>				
+						<input type="hidden" name="lab3" value="opinion_lab3">
+					</table>
+				</td>
+			</tr>
+			<tr>
+		 		<td><button type="submit">Submit</button></td>
+		 	</tr>
+		</table>
+	</form>
+</body>
+</html>
