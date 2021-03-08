@@ -6,24 +6,48 @@
     <meta name="keywords" content="Beach Mexico Oaxaca Nature">
     <meta name="description" content="Website sobre Puerto Escondido">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-     <script src="https://kit.fontawesome.com/72e594ef21.js"></script>
+    <script src="https://kit.fontawesome.com/72e594ef21.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <body style="background-color:paleturquoise">
     <title>Puerto Escondido</title>
 </head>
 <body>  
-        <div class="nav-bar" id="nav-bar">
-            <nav>
-                <a href="../index.html">HOME</a>
-                <a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp; INTRODUCTION &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a href="#examples">&nbsp;&nbsp;&nbsp;&nbsp; EXAMPLES &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a href="#hotels">&nbsp;&nbsp;&nbsp;&nbsp; HOTELS &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a href="gallery.html">&nbsp;&nbsp;&nbsp;&nbsp; GALLERY &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a href="info.html">&nbsp;&nbsp;&nbsp;&nbsp; INFO &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a href="local.html">&nbsp;&nbsp;&nbsp;&nbsp; LOCALIZATION &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a href="quizz.html">&nbsp;&nbsp;&nbsp;&nbsp; TAKE QUIZZ &nbsp;&nbsp;&nbsp;&nbsp;</a>
-        </nav>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><i class="fas fa-home"></i></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="local.html">Localization</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="info.html">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#examples">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hotels">Hotels</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-dark bg-dark" type="button"><a href="quizz.html"><span class="text-white">Quiz</span><i class="fas fa-question"></i></a></button>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-dark bg-light" type="button"><a href="https://github.com/pulgamecanica/pw-labs-andrehernandezrosado-a22007796"><i class="fab fa-github-alt"></i></a></button>
+          </form>
         </div>
-    <hr>
+      </div>
+    </nav>
     <h5 style="text-align: right">27 / 02 / 2021</h5>
     <h1> PUERTO ESCONDIDO &#127958; </h1>
     <img src="img/photo-1588623570373-24d3f3e3e3fb.jpeg" width="1000" height="750" alt="puerto escondido img">
@@ -126,6 +150,6 @@
     <div  style="text-align: right">
         <a href="comments.html"><h1><span><i class="fas fa-comments"></i>Comment</span></h1></a>
     </div>
-    <a href="#nav-bar">BACK TO TOP</a>
+    <a href="#navbar">BACK TO TOP</a>
 </body>
 </html>

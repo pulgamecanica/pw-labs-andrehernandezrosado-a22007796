@@ -2,13 +2,34 @@
 <html>
 <head>
 	<title>Comments</title>
-	 <script src="https://kit.fontawesome.com/72e594ef21.js"></script>
+	<script src="https://kit.fontawesome.com/72e594ef21.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/72e594ef21.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <body style="background-color: #D1EEE1">
 </head>
-<body style="background-color:paleturquoise">
-	<a href="./puerto_escondido.html">GO BACK</a>
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <a class="navbar-brand" href="../index.html"><i class="fas fa-home text-white"></i></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="./puerto_escondido.html">GO BACK</a>
+            </li> 
+        </ul>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
 	<h3>Comments</h3>
 	<form id="feedback" method="POST" oninput="outputExt.value=parseInt(extension.value)">
-		<table>
+		<table class="ms-5">
 			<tr>
 
 				<td>
@@ -82,13 +103,13 @@
 				</td>
 
 				<td>
-					<table>
+					<table class="ms-5">
 						<tr>
-				      <td colspan = "2"><div class="pinfo">We would love to hear about your experience:</div></td>
+				      <td colspan = "2"><div class="pinfo"><h3>We would love to hear about your experience:</h3></div></td>
 				    </tr>
 						<tr>
 							<td>
-				  			<span class="input-group-addon"><i class="fas fa-smile-beam"></i></span>
+				  				<span class="input-group-addon"><i class="fas fa-smile-beam"></i></span>
 							</td>
 
 							<td>
@@ -151,22 +172,24 @@
 								<hr>
 								<legend>Choose if you think we can make any of the options better:</legend>
 								<input type="checkbox" id="check1" name="check1" value="Logic">
-		            <label for="check1"> Information Logic</label><br>
-		            <input type="checkbox" id="check2" name="check2" value="Relevance">
-		            <label for="check2"> Information Relevance</label><br>
-		            <input type="checkbox" id="check3" name="check3" value="Significance">
-		            <label for="check3"> Information Significance</label><br>
-		            <input type="checkbox" id="check4" name="check4" value="Originality">
-		            <label for="check4	"> Originality</label><br>
+					            <label for="check1"> Information Logic</label><br>
+					            <input type="checkbox" id="check2" name="check2" value="Relevance">
+					            <label for="check2"> Information Relevance</label><br>
+					            <input type="checkbox" id="check3" name="check3" value="Significance">
+					            <label for="check3"> Information Significance</label><br>
+					            <input type="checkbox" id="check4" name="check4" value="Originality">
+					            <label for="check4	"> Originality</label><br>
 							</td>
 						</tr>				
-						<input type="hidden" name="lab3" value="opinion_lab3">
+							<input type="hidden" name="lab3" value="opinion_lab3">
+							<td colspan="2">
+								<input class="btn btn-primary" type="submit" value="Submit">
+							</td>
+			 			</tr>
 					</table>
 				</td>
 			</tr>
-			<tr>
-		 		<td><button type="submit">Submit</button></td>
-		 	</tr>
+			
 		</table>
 	</form>
 </body>
