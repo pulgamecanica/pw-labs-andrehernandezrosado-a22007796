@@ -6,8 +6,14 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/72e594ef21.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-    <body style="background-color: #D1EEE1">
+    <style>
+        polygon:hover {
+            opacity: 0.5 !important;
+        }
+        body {
+            background-color:paleturquoise
+        }
+    </style>
 </head>
 <body>
     <div class="collapse" id="navbarToggleExternalContent">
@@ -189,8 +195,37 @@
 					</table>
 				</td>
 			</tr>
-			
 		</table>
+		    <center>
+        <svg id="word-cloud" width="300" height="300">
+            <image href="img/puerto_word_cloud.png" alt="word cloud" width="300" height="225"></image>
+
+            <a href="./puerto_escondido.html">
+                <rect opacity="0.1" x="0" y="0" r   x="0" ry="0" width="300" height="300" fill="white"/>
+            </a>
+
+            <a href="./gallery.html">
+                <polygon opacity="0.0" points="75,40 210,40 210,75 75,75"></polygon>   
+            </a>
+
+            <a href="./info.html">
+                <polygon opacity="0.0" points="105,76 180,76 180,100 105,100"></polygon>   
+            </a>
+
+            <a href="./puerto_escondido.html">
+                <polygon opacity="0.0" points="6,70 288,125 300,170 7,107"></polygon>   
+            </a>
+
+            <a href="./quizz.html">
+                <polygon opacity="0.0" points="85,120 145,120 145,143 85,143"></polygon>   
+            </a>
+
+            <a href="./local.html">
+                <polygon opacity="0.0" points="40,140 245,140 245,175 40,175"></polygon>   
+            </a>
+
+        </svg>
+    </center>
 	</form>
 </body>
 </html>
