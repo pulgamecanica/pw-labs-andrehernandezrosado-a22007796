@@ -8,7 +8,7 @@
 
 ## About
 
-This is the first Lab, starting with HTML
+This Project is developed for Web Programming learning purposes.
 
 ## Devopment Main dependencies
 
@@ -17,6 +17,6 @@ This is the first Lab, starting with HTML
 - CSS
 
 ## Content
-- This page is static and will show text and one image
+- You can find each project as shown in the code: lab? (*lab[number]*) where the knowladge is progressing in each lab.
 
 For any further questions contact me at: **pulgamecanica11@gmail.com**
