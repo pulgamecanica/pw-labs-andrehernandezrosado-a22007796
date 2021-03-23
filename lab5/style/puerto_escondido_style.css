@@ -59,7 +59,6 @@ GRID CONFIG
 .hero {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
-  background-color: #0CFA6A;
   min-height: 500px;
 }
 
@@ -93,7 +92,7 @@ GRID CONFIG
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   /* For mobile phones: */
    .header {
     grid-column-start: 1;
@@ -114,7 +113,6 @@ GRID CONFIG
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 6;
-    background: #CF809A;
     height: 400px;
   }
  
@@ -130,14 +128,14 @@ GRID CONFIG
   }
   
   .related-posts {
-  	display: none;
+    visibility: hidden;
   }
   
   .footer {
     grid-column-start: 1;
     grid-column-end: 6;
-    grid-row-start: 10;
-    grid-row-end: 11;
+    grid-row-start: 8;
+    grid-row-end: 9;
   }
  
   
