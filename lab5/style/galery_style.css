@@ -1,0 +1,165 @@
+/* limit width so that content will need to scroll */
+main {
+  max-width: 35em;
+}
+#gallery {
+  padding: 2rem;
+}
+#photo_gallery {
+  text-align: center;
+}
+.poem {
+  display: relative;
+  float: left;
+  margin-left: 20%;
+  padding: 40px;
+  border-style: solid;
+  border-color: pink;
+  background-color: rgba(181, 165, 212, 0.5);
+}
+/* SCROLL SNAPPING */
+.scroll-container {
+  padding: 10px;
+  overflow-x: auto;
+  padding-bottom: 50px;
+}
+.scroll-item {
+  scroll-snap-align: center;
+  width: 22px;
+}
+
+.scroll-item:nth-child(1) {
+  background-image: url("../img/puerto300x200.png");
+}
+.scroll-item:nth-child(2) {
+  height: 10em;
+  width: 15em;
+  background-image: url("../img/zicatela.png");
+}
+.scroll-item:nth-child(3) {
+  background-image: url("../img/posada_real300x205.jpg");
+}
+.scroll-item:nth-child(4) {
+  height: 200px;
+  background-image: url("../img/playa450x350.jpg");
+}
+.scroll-item:nth-child(5) {
+  background-image: url("../img/sunset300x200.jpg");
+}
+.scroll-item:nth-child(6) {
+  background-image: url("../img/selina300x205.jpg");
+}
+.scroll-item:nth-child(7) {
+  background-image: url("../img/santaFe300x205.jpg");
+}
+.scroll-item:nth-child(8) {
+  background-image: url("../img/puerto_index300x225.png");
+}
+.scroll-item:nth-child(9) {
+  background-image: url("../img/whale.jpg");
+}
+.scroll-item:nth-child(10) {
+  height: 5em;
+  max-width: 150px;
+  background-image: url("../img/carrizalillo150x113.png");
+}
+.scroll-item:nth-child(10) {
+  transform-origin: left top;
+  animation: scale 2000ms infinite ease-in-out forwards;
+}
+@keyframes scale {
+   to {
+    transform: scale(1.1);
+  }
+}
+.scroll-item:hover {
+  animation: rotation 8s infinite linear;
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.scroll-item:nth-child(11) {
+  background-image: url("../img/laHacienda300x205.jpg");
+}
+.scroll-item:nth-child(12) {
+  background-image: url("../img/posada_real300x205.jpg");
+}
+
+/* FLEXBOX LAYOUT */
+.scroll-container[data-layoutmethod="flexbox"] {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center; /* vertically align children */
+}
+.scroll-container[data-layoutmethod="flexbox"] .scroll-item {
+  margin-right: 1em; /* fake gap */
+  flex: 0 0 auto;
+}
+
+
+/* center main element */
+main {
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* remove list styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.scroll-item {
+  /* make it square */
+  width: 300px;
+  height: 200px;
+  border: 1px solid rgba(0,0,0, 0.1);
+  /* some basic styling */
+  background-repeat: no-repeat;
+  border-radius: 0.2em;
+  /* center contents */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 999px) {
+  .poem {
+    float: none;
+    margin-left: 0; 
+    margin-bottom: 20px;
+  }
+  .images-container img {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    max-width: 65em;
+  }
+  .poem {
+    text-align: center;
+    display: inline-block;"
+  }
+  .video {
+    display: inline-block;"
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .images-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .images-container figure {
+    width: 50%;
+  }
+}
