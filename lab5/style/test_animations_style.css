@@ -426,7 +426,6 @@ mymove
 .animation08 div .moving-content {
   width: 50%;
   height: 50%;
-  background-color: red;
   font-weight: bold;
   position: relative;
   animation: mymove 15s infinite;
@@ -457,7 +456,7 @@ mymove
 }
 .animation08 .moving-content button{
   background-color: rgba(222, 210, 210, 0.2);
-  color: black;
+  color: black;text-transform: capitalize;
   margin: 0;
   width: 90%;
   height: 80%;
@@ -478,7 +477,7 @@ mymove
   background-color: #F34DB6; 
 }
 @keyframes mymove {
-  0%   {background-color: #eb4e1e; left:0; top:30%;}
-  50.0%  {background-color:#34e3d7; left:50%; top:30%;}
-  100.0%  {background-color:#a10880; left: 0; top:30%;}
+  0%   {background-color: #eb4e1e;border-radius: 50%; left:0; top:30%;}
+  50.0%  {background-color:#34e3d7;border-radius: 50%; left:50%; top:30%;}
+  100.0%  {background-color:#a10880;border-radius: 50%; left: 0; top:30%;}
 }

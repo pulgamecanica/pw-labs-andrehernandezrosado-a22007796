@@ -10,6 +10,13 @@
 
 This Project is developed for Web Programming learning purposes.
 
+#### INDEX
++ Lab1 - Intro to Web Prog
++ Lab2 - City Web Site
++ Lab3 - QUIZZ (Forms)
++ Lab4 - HTML5&CSS 
++ Lab5 - Dynamic Website
+
 ## Devopment Main dependencies
 
 - HTML
